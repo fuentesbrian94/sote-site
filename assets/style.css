@@ -30,3 +30,6 @@ section{padding:64px 0}section.alt{background:var(--greige)}h2{font-size:clamp(1
 .center{text-align:center}.narrow{max-width:780px;margin:0 auto}
 footer{background:#2f2a28;color:#ddd;padding:48px 0;font-size:15px}footer a{color:#fff}footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
 @media(max-width:760px){.split{grid-template-columns:1fr}.areas{columns:2}nav{display:none}.hero{min-height:64vh}}
+.prose h2{text-align:left;margin-top:2.2em}.prose blockquote{border-left:4px solid var(--mauve);margin:1.2em 0;padding:.2em 1em;background:#fff;border-radius:0 12px 12px 0}
+.prose img.lead{border-radius:18px;aspect-ratio:3/2;object-fit:cover;width:100%}.prose hr{border:0;border-top:1px solid #e4ddd6;margin:2em 0}
+.crumbs{font:14px Arial,sans-serif;opacity:.9}
