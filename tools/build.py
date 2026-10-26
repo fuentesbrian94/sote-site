@@ -247,3 +247,4 @@ open(f"{ROOT}/index.html","w").write(open(f"{ROOT}/tools/home.template.html").re
 urls = [BASE] + [BASE + s + "/" for s in PAGES] + [BASE + "blog/"] + [f"{BASE}blog/{p}/" for p,_ in POSTS]
 open(f"{ROOT}/sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     "".join(f"  <url><loc>{u}</loc></url>\n" for u in urls) + "</urlset>\n")
+exec(open(os.path.join(ROOT,"tools","optimize.py")).read())

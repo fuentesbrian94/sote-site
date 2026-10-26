@@ -33,3 +33,4 @@ footer{background:#2f2a28;color:#ddd;padding:48px 0;font-size:15px}footer a{colo
 .prose h2{text-align:left;margin-top:2.2em}.prose blockquote{border-left:4px solid var(--mauve);margin:1.2em 0;padding:.2em 1em;background:#fff;border-radius:0 12px 12px 0}
 .prose img.lead{border-radius:18px;aspect-ratio:3/2;object-fit:cover;width:100%}.prose hr{border:0;border-top:1px solid #e4ddd6;margin:2em 0}
 .crumbs{font:14px Arial,sans-serif;opacity:.9}
+picture{display:contents}
