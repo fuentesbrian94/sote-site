@@ -2,7 +2,7 @@
 """Builds inner pages from sq-clip/md copy. BASE = canonical base URL (change at launch)."""
 import re, json, os, markdown
 from PIL import Image
-BASE = "https://example.com/sote-site/"   # <-- change at launch
+BASE = "https://fuentesbrian94.github.io/sote-site/"   # <-- change at launch
 MD = "/workspace/sq-clip/md"; COPY = "/workspace/squarespace-site/copy"; PH = "/workspace/yelp-photos-from-google"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUOTE = "https://sparkle-book-85ab8582.base44.app/"
