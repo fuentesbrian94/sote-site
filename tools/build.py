@@ -67,6 +67,7 @@ def faqs(body):
     out = []
     for m in re.finditer(r"^###\s+(.+\?)\s*\n+((?:(?!^#|^---).+\n?)+)", body, re.M):
         ans = "\n".join(l for l in m.group(2).splitlines() if not re.fullmatch(r"[\s*·→]*(\[[^\]]+\]\([^)]+\)[\s*·→]*)+", l))
+        ans = "\n".join(re.sub(r"(?<=[.!?])(\s*[·→]?\s*\*{0,2}\[[^\]]+\]\([^)]+\)\*{0,2})+\s*$", "", l) for l in ans.splitlines())
         a = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", ans).replace("**","").strip()
         out.append({"@type":"Question","name":m.group(1).strip(),"acceptedAnswer":{"@type":"Answer","text":" ".join(a.split())}})
     return out
